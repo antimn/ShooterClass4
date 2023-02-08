@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Uu]serSettings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -21,6 +22,7 @@
 
 # Visual Studio cache directory
 .vs/
+.idea/
 
 # Gradle cache directory
 .gradle/
@@ -53,8 +55,27 @@ sysinfo.txt
 
 # Builds
 *.apk
-*.unitypackage
 
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Firebase generated file
+remote_config_data
+
+# Ignore generated files by Dependency Resolver
+[Aa]ssets/Plugins/Generated
+[Aa]ssets/Plugins/Generated.meta
+
+# Ignore Firebase google-services-desktop file with meta
+[Aa]ssets/StreamingAssets/google-services-desktop.*
+
+*.vsconfig
+
+*_BackUpThisFolder_ButDontShipItWithYourGame
+*_BurstDebugInformation_DoNotShip
+
+# MacOS annoying file
+.DS_Store
+
+# Igone settings from ProjectCurrator plugin
+[Pp]rojectSettings/ProjectCuratorSettings.json
