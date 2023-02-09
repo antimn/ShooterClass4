@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public float force = 10;
-    public float damage =  10;
-    public GameObject impcatPrefub;
-    public Transform shootPoint;
-    public int i = 1; 
+    [SerializeField]private float force = 10;
+    [SerializeField]private float damage =  10;
+    [SerializeField]private GameObject impcatPrefub;
+    [SerializeField]private Transform shootPoint;
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -27,6 +27,7 @@ public class Weapon : MonoBehaviour
                     destructible.ReceiveDamage(damage);
                 }
 
+  
                 var rigitbody = hit.transform.GetComponent<Rigidbody>();
                 if (rigitbody != null)
                 {
