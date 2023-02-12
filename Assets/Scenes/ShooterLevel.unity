@@ -250,7 +250,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37cdfea641a460f819179120e9a288a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpCurrent: 100
+  hpCurrent: 5
+--- !u!1 &458410441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6270954391577482089, guid: 00e9ce5bcedd54b2888f06b5ad2ff514, type: 3}
+  m_PrefabInstance: {fileID: 6270954391498660512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &458410449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458410441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d20c0c36eb4be486fd3f7da4e271d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grenadePrefab: {fileID: 6270954391577482089, guid: 00e9ce5bcedd54b2888f06b5ad2ff514, type: 3}
+  throwForce: 40
+--- !u!114 &458410450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458410441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c073a880207e4d0f8aeb20b040dc80c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceBomb: 5
+  damage: 50
+  explosionEffect: {fileID: 100002, guid: f4616fc15d6944e0fac0ef9b4e21cafa, type: 3}
+  radius: 5
 --- !u!1 &542508511
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37cdfea641a460f819179120e9a288a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpCurrent: 100
+  hpCurrent: 5
 --- !u!1 &874605735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,7 +1182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37cdfea641a460f819179120e9a288a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpCurrent: 100
+  hpCurrent: 5
 --- !u!1 &1172452344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,7 +1430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37cdfea641a460f819179120e9a288a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpCurrent: 100
+  hpCurrent: 5
 --- !u!1 &1622647638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,7 +1558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37cdfea641a460f819179120e9a288a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpCurrent: 100
+  hpCurrent: 5
 --- !u!1 &1764214107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,7 +1751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37cdfea641a460f819179120e9a288a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpCurrent: 100
+  hpCurrent: 5
 --- !u!1 &2031555902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,9 +2232,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6270954391577482095, guid: 00e9ce5bcedd54b2888f06b5ad2ff514, type: 3}
       propertyPath: forceBomb
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6270954391577482095, guid: 00e9ce5bcedd54b2888f06b5ad2ff514, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -8694808412010671512, guid: 00e9ce5bcedd54b2888f06b5ad2ff514, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 00e9ce5bcedd54b2888f06b5ad2ff514, type: 3}
 --- !u!1001 &7288094137546172433
 PrefabInstance:

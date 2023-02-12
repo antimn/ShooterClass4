@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6270954391577482094}
   - component: {fileID: 6270954391577482096}
   - component: {fileID: 6270954391577482095}
+  - component: {fileID: -8694808412010671512}
+  - component: {fileID: 7776233062977906489}
   m_Layer: 0
   m_Name: grenade
   m_TagString: Untagged
@@ -127,13 +129,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2ff0f89c504efb83f586286c46d54c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceBomb: 10
-  damage: 10
-  impcatPrefub: {fileID: 0}
-  grenadePrefab: {fileID: 6270954391577482089}
   delay: 3
   countDown: 0
   HasExploded: 0
-  explosionEffect: {fileID: 100002, guid: f4616fc15d6944e0fac0ef9b4e21cafa, type: 3}
-  radius: 5
+--- !u!114 &-8694808412010671512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270954391577482089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d20c0c36eb4be486fd3f7da4e271d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grenadePrefab: {fileID: 6270954391577482089}
   throwForce: 40
+--- !u!114 &7776233062977906489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270954391577482089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c073a880207e4d0f8aeb20b040dc80c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceBomb: 50
+  damage: 50
+  explosionEffect: {fileID: 100002, guid: f4616fc15d6944e0fac0ef9b4e21cafa, type: 3}
+  radius: 40

@@ -4,7 +4,7 @@ namespace DefaultNamespace
 {
     public class DestructibleObject : MonoBehaviour
     {
-        [SerializeField] private float hpCurrent = 100;
+        [SerializeField] private float hpCurrent = 1;
 
         public void ReceiveDamage(float damage)
         {
@@ -15,6 +15,5 @@ namespace DefaultNamespace
                 Destroy(gameObject);
             }
         }
-
     }
 }
