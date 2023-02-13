@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class BombC : MonoBehaviour
+    public class BombCreate : MonoBehaviour
 
     {
         [SerializeField] public GameObject grenadePrefab;

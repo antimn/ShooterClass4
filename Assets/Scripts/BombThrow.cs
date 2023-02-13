@@ -22,8 +22,8 @@ public class BombThrow : MonoBehaviour
         {
             // Делаем гет компонент из нашего объекта префаба бомбы
             // Это вызов нашего войда в котором мы написали создания копии префаба гранаты и метание ее
-            BombC Bomb = gameObject.GetComponent<BombC>();
-            Bomb.Bomb();
+            BombCreate BombCreate = gameObject.GetComponent<BombCreate>();
+            BombCreate.Bomb();
         }
 
 
@@ -34,7 +34,7 @@ public class BombThrow : MonoBehaviour
         {
             // В MonoBehaviour нельзя использовать 'new', поэтому я использовал GetComponent 
             // и прицепил к префабу бомбы скрипт ExplodeBombT
-            ExplodeBombT Explode = gameObject.GetComponent<ExplodeBombT>();
+            ExplodeBomb Explode = gameObject.GetComponent<ExplodeBomb>();
             Explode.Explode();
         }
     }

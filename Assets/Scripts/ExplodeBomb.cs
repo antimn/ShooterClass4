@@ -2,7 +2,7 @@ using DefaultNamespace;
 using UnityEngine;
 
 
-public class ExplodeBombT : MonoBehaviour
+public class ExplodeBomb : MonoBehaviour
 {
     [SerializeField] private float forceBomb = 50f;
     [SerializeField] private float damage = 50f;
