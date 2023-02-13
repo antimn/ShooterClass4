@@ -6,7 +6,7 @@ public class ExplodeBomb : MonoBehaviour
 {
     [SerializeField] private float forceBomb = 50f;
     [SerializeField] private float damage = 50f;
-    [SerializeField] GameObject explosionEffect;
+    [SerializeField] private GameObject explosionEffect;
     [SerializeField] private float radius = 40f;
 
     public void Explode()

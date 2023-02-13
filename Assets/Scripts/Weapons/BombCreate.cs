@@ -5,7 +5,7 @@ namespace DefaultNamespace
     public class BombCreate : MonoBehaviour
 
     {
-        [SerializeField] public GameObject grenadePrefab;
+        [SerializeField] private GameObject grenadePrefab;
         [SerializeField] private float throwForce = 40f;
 
         public void Bomb()

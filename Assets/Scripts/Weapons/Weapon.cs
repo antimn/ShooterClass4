@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] public float force = 10;
-    [SerializeField] public float damage = 10;
-    [SerializeField] public GameObject impcatPrefub;
-    [SerializeField] public Transform shootPoint;
+    [SerializeField] private float force = 10;
+    [SerializeField] private float damage = 10;
+    [SerializeField] private GameObject impcatPrefub;
+    [SerializeField] private Transform shootPoint;
 // Это я написал во время урока, просто отрефакторил не много, дискрипшн не писал, решил его писать на основе уже гранаты
     private void Update()
     {
