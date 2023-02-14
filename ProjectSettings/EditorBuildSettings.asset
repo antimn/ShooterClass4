@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 34216fd0db4414999aa3c8ba6dc29617
+  - enabled: 1
+    path: Assets/Scenes/Starter.unity
+    guid: 707acc8dffb72b144bb1ffbe1c965f3d
+  - enabled: 1
+    path: Assets/Scenes/MenuAfterTutor.unity
+    guid: 216f6204a6132403fa5bd84c76d81e78
+  - enabled: 1
+    path: Assets/POLYGON - FPS free/scene/demo_map.unity
+    guid: 19fab4276374c3b408b0afe0a064b529
   m_configObjects: {}

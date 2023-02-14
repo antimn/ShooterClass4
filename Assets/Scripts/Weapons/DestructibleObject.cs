@@ -1,19 +1,19 @@
 using UnityEngine;
 
-namespace DefaultNamespace
+public class DestructibleObject : MonoBehaviour
 {
-    public class DestructibleObject : MonoBehaviour
+    [SerializeField] private float hpCurrent = 1;
+    public int prefabCount = 4;
+
+    public void ReceiveDamage(float damage)
     {
-        [SerializeField] private float hpCurrent = 1;
+        hpCurrent -= damage;
 
-        public void ReceiveDamage(float damage)
+        if (hpCurrent <= 0f)
         {
-            hpCurrent -= 1f; // hpCurrent = hpCurrent - 1f;
-
-            if (hpCurrent < 0f)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
+            GameManager gameManager = FindObjectOfType<GameManager>();
+            gameManager.OnPrefabDestroyed();
         }
     }
 }

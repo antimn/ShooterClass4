@@ -28,6 +28,7 @@ public class ExplodeBomb : MonoBehaviour
             if (dest != null)
             {
                 dest.ReceiveDamage(damage);
+                
             }
         }
 
