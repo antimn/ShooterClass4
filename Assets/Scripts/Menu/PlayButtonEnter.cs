@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayButtonEnter : MonoBehaviour
 {
-    public GameObject gameObject;
     [SerializeField] private string sceneName;
 
     private void Update()

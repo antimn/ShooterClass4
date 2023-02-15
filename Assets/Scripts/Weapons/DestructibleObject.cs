@@ -3,7 +3,6 @@ using UnityEngine;
 public class DestructibleObject : MonoBehaviour
 {
     [SerializeField] private float hpCurrent = 1;
-    public int prefabCount = 4;
 
     public void ReceiveDamage(float damage)
     {

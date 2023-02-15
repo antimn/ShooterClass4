@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int prefabCount = 4;
-    private int destroyedPrefabCount = 0;
+    [SerializeField] private int prefabCount = 4;
+    [SerializeField] private int destroyedPrefabCount = 0;
     [SerializeField] private string sceneName;
 
     public void OnPrefabDestroyed()
